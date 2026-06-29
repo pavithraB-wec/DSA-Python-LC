@@ -1,5 +1,4 @@
-```markdown
-# 🚀 LeetCode Solutions
+ ## LeetCode Solutions
 
 Welcome to my **LeetCode Solutions Repository**! This repository contains my solutions to LeetCode problems that I solve as part of my Data Structures and Algorithms (DSA) practice.
 
@@ -7,13 +6,13 @@ The goal of this repository is to strengthen problem-solving skills, improve cod
 
 ---
 
-## 🛠️ Programming Language
+## Programming Language
 
-- Python 🐍
+- Python 
 
 ```
 
-## 📖 What You'll Find
+## What You'll Find
 
 Each solution includes:
 
@@ -25,7 +24,7 @@ Each solution includes:
 
 ---
 
-## 🎯 Purpose
+## Purpose
 
 This repository helps me:
 
@@ -37,7 +36,7 @@ This repository helps me:
 
 ---
 
-## 📚 Topics gonna Cover
+## Topics gonna Cover
 
 - Arrays
 - Strings
@@ -64,7 +63,7 @@ This repository helps me:
 
 ---
 
-## 💡 Notes
+##  Notes
 
 - Solutions are primarily written in **Python**.
 - Multiple approaches may be added for some problems.
@@ -73,7 +72,7 @@ This repository helps me:
 ---
 
 
-## 👩‍💻 Author
+##  Author
 
 **B. Pavithra**
 
@@ -82,5 +81,5 @@ This repository helps me:
 
 ---
 
-### Happy Coding! 🚀
+### Happy Coding! 
 ```
