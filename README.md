@@ -1,4 +1,4 @@
- ## LeetCode Solutions
+##  LeetCode Solutions
 
 Welcome to my **LeetCode Solutions Repository**! This repository contains my solutions to LeetCode problems that I solve as part of my Data Structures and Algorithms (DSA) practice.
 
@@ -6,27 +6,24 @@ The goal of this repository is to strengthen problem-solving skills, improve cod
 
 ---
 
-## Programming Language
+##  Programming Language
 
 - Python 
-
 ```
-
-## What You'll Find
+```
+##  What You'll Find
 
 Each solution includes:
 
-- ✔️ Clean and readable code
-- ✔️ Optimal approach
-- ✔️ Time Complexity
-- ✔️ Space Complexity
-- ✔️ Comments (where necessary)
+-  Clean and readable code
+-  Optimal approach
+-  Time Complexity
+-  Space Complexity
+-  Comments (where necessary)
 
 ---
 
-## Purpose
-
-This repository helps me:
+##  Purpose
 
 - Practice Data Structures and Algorithms
 - Prepare for coding interviews
@@ -36,7 +33,7 @@ This repository helps me:
 
 ---
 
-## Topics gonna Cover
+##  Topics gonna Cover
 
 - Arrays
 - Strings
@@ -71,6 +68,11 @@ This repository helps me:
 
 ---
 
+##  If You Find This Repository Helpful
+
+If this repository helps you in your learning journey, consider giving it a ⭐ on GitHub.
+
+---
 
 ##  Author
 
