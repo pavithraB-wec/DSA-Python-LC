@@ -8,18 +8,17 @@ class Solution(object):
         """
         graph = defaultdict(list)
 
-        # Sort in reverse so we can pop the smallest destination
+        # Reverse sort so pop() gives lexicographically smallest destination
         for src, dst in sorted(tickets, reverse=True):
             graph[src].append(dst)
 
-        itinerary = []
+        route = []
 
         def dfs(airport):
             while graph[airport]:
                 nxt = graph[airport].pop()
                 dfs(nxt)
-            itinerary.append(airport)
+            route.append(airport)
 
         dfs("JFK")
-
-        return itinerary[::-1]
+        return route[::-1]
