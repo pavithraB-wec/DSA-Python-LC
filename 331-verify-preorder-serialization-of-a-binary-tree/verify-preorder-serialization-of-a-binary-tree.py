@@ -7,7 +7,7 @@ class Solution(object):
         slots = 1
 
         for node in preorder.split(','):
-            # Every node uses one slot
+            # Every node occupies one slot
             slots -= 1
 
             if slots < 0:
