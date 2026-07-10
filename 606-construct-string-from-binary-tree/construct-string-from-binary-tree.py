@@ -7,12 +7,12 @@ class Solution(object):
         if not root:
             return ""
 
-        if not root.left and not root.right:
-            return str(root.val)
+        res = str(root.val)
 
-        if not root.right:
-            return str(root.val) + "(" + self.tree2str(root.left) + ")"
+        if root.left or root.right:
+            res += "(" + self.tree2str(root.left) + ")"
 
-        return (str(root.val) +
-                "(" + self.tree2str(root.left) + ")" +
-                "(" + self.tree2str(root.right) + ")")
+        if root.right:
+            res += "(" + self.tree2str(root.right) + ")"
+
+        return res
