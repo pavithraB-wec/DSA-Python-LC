@@ -5,7 +5,7 @@ class Solution(object):
         :rtype: int
         """
         stack = [-1]
-        maxLen = 0
+        ans = 0
 
         for i in range(len(s)):
             if s[i] == '(':
@@ -16,6 +16,6 @@ class Solution(object):
                 if not stack:
                     stack.append(i)
                 else:
-                    maxLen = max(maxLen, i - stack[-1])
+                    ans = max(ans, i - stack[-1])
 
-        return maxLen
+        return ans
