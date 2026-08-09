@@ -9,9 +9,9 @@ class Solution(object):
         max_area = 0
 
         while left < right:
-            width = right - left
-            area = min(height[left], height[right]) * width
-            max_area = max(max_area, area)
+            h = min(height[left], height[right])
+            w = right - left
+            max_area = max(max_area, h * w)
 
             if height[left] < height[right]:
                 left += 1
