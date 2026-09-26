@@ -2,35 +2,41 @@ import heapq
 
 class Solution(object):
     def getSkyline(self, buildings):
-        """
-        :type buildings: List[List[int]]
-        :rtype: List[List[int]]
-        """
         events = []
 
-        # Create events
         for left, right, height in buildings:
+            # Start event
             events.append((left, -height, right))
+
+            # End event
             events.append((right, 0, 0))
 
         events.sort()
 
-        result = []
-        heap = [(0, float('inf'))]  # (-height, right)
+        heap = [(0, float('inf'))]
+        answer = []
+        i = 0
 
-        for x, neg_h, right in events:
+        while i < len(events):
+            x = events[i][0]
 
-            # Remove buildings that ended
+            # Process all events at this x
+            while i < len(events) and events[i][0] == x:
+                _, neg_height, right = events[i]
+
+                if neg_height != 0:
+                    heapq.heappush(heap, (neg_height, right))
+
+                i += 1
+
+            # Remove buildings that have ended
             while heap and heap[0][1] <= x:
                 heapq.heappop(heap)
 
-            # Add new building
-            if neg_h:
-                heapq.heappush(heap, (neg_h, right))
+            current_height = -heap[0][0]
 
-            curr_height = -heap[0][0]
+            # Add key point only when height changes
+            if not answer or answer[-1][1] != current_height:
+                answer.append([x, current_height])
 
-            if not result or result[-1][1] != curr_height:
-                result.append([x, curr_height])
-
-        return result
+        return answer
