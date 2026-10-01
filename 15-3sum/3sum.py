@@ -1,16 +1,12 @@
 class Solution(object):
     def threeSum(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[List[int]]
-        """
         nums.sort()
         result = []
         n = len(nums)
 
         for i in range(n - 2):
 
-            # Skip duplicate first elements
+            # Skip duplicate first values
             if i > 0 and nums[i] == nums[i - 1]:
                 continue
 
@@ -21,13 +17,16 @@ class Solution(object):
                 total = nums[i] + nums[left] + nums[right]
 
                 if total == 0:
-                    result.append([nums[i], nums[left], nums[right]])
+                    result.append([
+                        nums[i],
+                        nums[left],
+                        nums[right]
+                    ])
 
-                    # Skip duplicate left values
+                    # Skip duplicates
                     while left < right and nums[left] == nums[left + 1]:
                         left += 1
 
-                    # Skip duplicate right values
                     while left < right and nums[right] == nums[right - 1]:
                         right -= 1
 
