@@ -1,19 +1,15 @@
 class Solution(object):
     def removeDuplicateLetters(self, s):
-        """
-        :type s: str
-        :rtype: str
-        """
         last = {}
 
-        # Last occurrence of each character
-        for i, ch in enumerate(s):
-            last[ch] = i
+        for i in range(len(s)):
+            last[s[i]] = i
 
         stack = []
         seen = set()
 
-        for i, ch in enumerate(s):
+        for i in range(len(s)):
+            ch = s[i]
 
             if ch in seen:
                 continue
@@ -24,4 +20,4 @@ class Solution(object):
             stack.append(ch)
             seen.add(ch)
 
-        return "".join(stack)
+        return ''.join(stack)
